@@ -195,10 +195,6 @@ section#about {
   /* height: 100vh; */
   /* temp */
 
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-
   text-align: left;
   font-family: var(--limelight);
 
