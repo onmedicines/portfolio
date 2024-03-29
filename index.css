@@ -169,16 +169,14 @@ section#home {
       line-height: 5rem;
 
       text-align: center;
-      .content-overlay-where {
+      /* .content-overlay-where {
       }
       .content-overlay-design {
-        /* font-family: var(--wind-song); */
       }
       .content-overlay-meets {
       }
       .content-overlay-usability {
-        /* font-family: var(--victor-mono); */
-      }
+      } */
     }
 
     .scroller-box {
