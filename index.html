@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,8 +12,8 @@
       <h1 class="nav-brand">UXify</h1>
       <ul>
         <li><a href="#about" class="about">About</a></li>
-        <li><a href="#pricing" class="pricing">Pricing</a></li>
-        <li><a href="#contact" class="contact">Contact</a></li>
+        <li><a href=".pricing" class="nav-pricing">Pricing</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
       </ul>
     </section>
 
@@ -104,13 +104,63 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing">
-      <div class="card card-one">
-        <h1>10</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim aperiam</p>
+    <section class="pricing">
+      <div class="title">
+        <h1>Choose the best plan for your business</h1>
+      </div>
+      <div class="card-deck">
+        <div class="card card-dynamic">
+          <div class="name-price-container">
+            <h1 class="plan-name">Dynamic Website</h1>
+            <!-- <h1 class="price">5000</h1> -->
+          </div>
+          <div class="perks">
+            <h1>Perks</h1>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card-static">
+          <div class="name-price-container">
+            <h1 class="plan-name">Static Website</h1>
+            <!-- <h1 class="price">1000</h1> -->
+          </div>
+          <div class="perks">
+            <h1>Perks</h1>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-
+    <footer>
+      <div class="email">
+        <h1 class="title">Email us at</h1>
+        <p>uxifyed@hotmail.com</p>
+      </div>
+      <div class="social">
+        <h1 class="title">Social</h1>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+          >uxify.buiseness
+        </p>
+      </div>
+      <div class="contact">
+        <a href="./contact.html"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          <h1 class="title">Contact Us</h1></a
+        >
+      </div>
+    </footer>
     <!-- Contact -->
     <section id="contact"></section>
     <script src="./index.js"></script>

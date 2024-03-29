@@ -48,3 +48,42 @@ const aboutTopRightObserver = new IntersectionObserver(
   }
 );
 aboutTopRightObserver.observe(document.querySelector(".about-top-right"));
+
+// Pricing section animation on-scroll
+const pricingElements = [".title", ".card-deck"];
+
+const pricingElementObserver = new IntersectionObserver(
+  (entries) => {
+    // debug
+    console.log("hi");
+
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+);
+
+pricingElements.forEach((element) => {
+  pricingElementObserver.observe(document.querySelector(element));
+});
+
+//Pricing ::before animation
+const pricingBeforeObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-pricing-before");
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+pricingBeforeObserver.observe(document.querySelector(".pricing::before"));

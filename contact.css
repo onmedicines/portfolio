@@ -1,0 +1,120 @@
+/* fonts */
+/* victor mono */
+@import url("https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* wind song */
+@import url("https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap");
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* limelight */
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+/* cantata one */
+@import url("https://fonts.googleapis.com/css2?family=Cantata+One&display=swap");
+
+:root {
+  --popins: "Popins", sans-serif;
+  --wind-song: "WindSong", cursive;
+  --limelight: "Limelight", sans-serif;
+  --victor-mono: "Victor Mono", monospace;
+  --cantata-one: "Cantata One", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+
+  background-color: #dff5ff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    color: #008dda;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 30%;
+
+    .svg-container {
+      align-self: flex-start;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0.5rem;
+      padding-left: 0.25rem;
+      border-radius: 0.5rem;
+
+      background-color: #008dda;
+      color: #e0f8f7;
+
+      font-weight: 600;
+      text-decoration: none;
+
+      transition: all 250ms cubic-bezier(0.44, 0.64, 0.33, 1);
+    }
+
+    .svg-container:hover {
+      border-radius: 1rem;
+    }
+
+    .name-container,
+    .email-container,
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      label {
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: var(--cantata-one);
+      }
+
+      input,
+      textarea {
+        background-color: #bae6e5;
+        color: #008dda;
+
+        border: none;
+        border-bottom: 2px solid;
+        border-radius: 0.5rem;
+
+        padding: 0.5rem 0.75rem;
+
+        font-family: var(--popins);
+        font-size: 1.15rem;
+        letter-spacing: 1px;
+
+        outline: none;
+
+        transition: all 200ms cubic-bezier(0.44, 0.64, 0.33, 1);
+      }
+
+      textarea {
+        resize: none;
+        outline: none;
+        min-width: auto;
+        overflow: hidden;
+
+        min-height: 4rem;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: 2px solid;
+        border-radius: 1.25rem;
+      }
+    }
+  }
+}
